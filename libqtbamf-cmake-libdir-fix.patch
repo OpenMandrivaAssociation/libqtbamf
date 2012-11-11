@@ -1,0 +1,37 @@
+diff -urN libqtbamf-0.2.1.old//CMakeLists.txt libqtbamf-0.2.1/CMakeLists.txt
+--- libqtbamf-0.2.1.old//CMakeLists.txt	2011-04-19 10:55:37.000000000 +0100
++++ libqtbamf-0.2.1/CMakeLists.txt	2011-05-19 19:12:16.084387551 +0100
+@@ -96,12 +96,13 @@
+     )
+ 
+ # Install
+-set(IMPORT_INSTALL_DIR lib/qt4/imports/bamf)
++set(libdir CACHE PATH "libdir")
++set(QML_INSTALL_DIR ${libdir}/qt4/plugins/imports/bamf)
+ set(INCLUDE_INSTALL_DIR include/QtBamf)
+ 
+ ## QtBamf
+ install(TARGETS QtBamf
+-    LIBRARY DESTINATION lib${LIB_SUFFIX}
++    LIBRARY DESTINATION ${libdir}
+     )
+ 
+ install(FILES
+@@ -118,14 +119,14 @@
+ 
+ # FIXME: Generate from ${CMAKE_INSTALL_PREFIX}
+ install(FILES libqtbamf.pc
+-    DESTINATION lib/pkgconfig
++    DESTINATION ${libdir}/pkgconfig
+     )
+ 
+ ## QtBamfQml
+ install(TARGETS QtBamfQml
+-    LIBRARY DESTINATION ${IMPORT_INSTALL_DIR}
++    LIBRARY DESTINATION ${QML_INSTALL_DIR}
+     )
+ 
+ install(FILES qmldir
+-    DESTINATION ${IMPORT_INSTALL_DIR}
++    DESTINATION ${QML_INSTALL_DIR}
+     )
