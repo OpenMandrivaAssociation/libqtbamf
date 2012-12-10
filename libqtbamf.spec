@@ -66,3 +66,10 @@ popd build
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/libqtbamf.pc
 
+
+
+%changelog
+* Mon Jan 23 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.2.2-1
++ Revision: 767413
+- imported package libqtbamf
+
