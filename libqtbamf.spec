@@ -5,7 +5,7 @@
 Summary:	Qt binding and QML plugin for bamf
 Name:		libqtbamf
 Version:	0.2.2
-Release:	1
+Release:	2
 License:	LGPLv3,GPLv3
 Url:		http://launchpad.net/bamf-qt
 Group:		System/Libraries
