@@ -39,7 +39,7 @@ generated with qdbusxml2cpp and matching the GObject library structure.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 #pushd build
