@@ -7,7 +7,7 @@ Name:		libqtbamf
 Version:	0.2.2
 Release:	2
 License:	LGPLv3,GPLv3
-Url:		http://launchpad.net/bamf-qt
+Url:		https://launchpad.net/bamf-qt
 Group:		System/Libraries
 Source0:	%{name}-%{version}.tar.gz
 # PATCH-FIX-UPSTREAM - libqtbamf-cmake-libdir-fix.patch nmarques@opensuse.org -- Fixes $LIBDIR for file installation, upstreamed (lp#784262)
